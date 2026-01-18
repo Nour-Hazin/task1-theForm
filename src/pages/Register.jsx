@@ -87,7 +87,7 @@ const Register = () => {
             </GridItem>
 
             <GridItem p={6} bg="gray.50" rounded="lg" border="1px solid" borderColor="gray.200" _dark={{bg: "gray.900"}}>
-                <Heading size="md" mb={4} color="blue.600">Live Preview Panel</Heading>
+                <Heading size="md" mb={4} color="blue.600">Live Preview </Heading>
                 <VStack align="start" gap={4}>
                     <Text><b>Name:</b> {user.name || "---"}</Text>
                     <Text><b>Bio:</b> {user.bio || "---"}</Text>
