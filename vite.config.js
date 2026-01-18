@@ -4,6 +4,7 @@ import path from 'path' // أضف هذا السطر
 
 export default defineConfig({
   plugins: [react()],
+  base: "/task1-theForm/",
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'), 
