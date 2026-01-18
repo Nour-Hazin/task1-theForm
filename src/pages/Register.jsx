@@ -73,7 +73,9 @@ const Register = () => {
                     <Field label="Profile Image">
                         <Input type="file" name="image" accept="image/*" onChange={onFileChange} />
                     </Field>
-
+                    <Field label="Profile Video">
+    <Input type="file" name="video" accept="video/*" onChange={onFileChange} />
+</Field>
                     <Checkbox checked={user.agree} onCheckedChange={(e) => setUser({...user, agree: !!e.checked})}>
                         I agree to the terms
                     </Checkbox>
@@ -90,6 +92,7 @@ const Register = () => {
                     <Text><b>Name:</b> {user.name || "---"}</Text>
                     <Text><b>Bio:</b> {user.bio || "---"}</Text>
                     <Text><b>Country:</b> {user.country}</Text>
+                    <Text><b>Gender:</b> {user.gender}</Text>
                     {user.image && <Image src={user.image} w="150px" rounded="md" />}
                     {user.video && <video src={user.video} controls width="200" />}
                 </VStack>
