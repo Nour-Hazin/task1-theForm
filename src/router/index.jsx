@@ -13,7 +13,7 @@ const router = createBrowserRouter(
         </Route>
     ),
     {
-        basename: "/task1-theForm" 
+        basename: "task1-theForm" 
     }
 );
 
